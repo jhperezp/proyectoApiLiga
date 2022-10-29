@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "32a624e1-652f-4018-b7cc-b8961d5db98f",
+		"name": "NewAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20247921"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "GET Usuarios",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4OTYyMjMsImV4cCI6MTY2Mzk4MjYyMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.kZlAWLCsFzJkurWz1o5rMCHd6KD8D4L0U2tTQcHuCvc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.local.com/usuarios",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registro de Usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Marco Hipolito Aguilar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "prueba@correo.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "a2!asasdfasfdss",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.local.com/registro",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"registro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login de Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://api.local.com/login?email=prueba@correo.com&password=a2!asasdfasfdss",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "prueba@correo.com"
+								},
+								{
+									"key": "password",
+									"value": "a2!asasdfasfdss"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Renovar Token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjIyNjczMDMsImV4cCI6MTY2MjM1MzcwMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.PasR6MA_7etCa8g8g64z7nUO92Z1x2TWZ_kc3SLInmE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.local.com/token?email=prueba@correo.com&password=a2!asasdfasfdss",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"token"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "prueba@correo.com"
+								},
+								{
+									"key": "password",
+									"value": "a2!asasdfasfdss"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ligas",
+			"item": [
+				{
+					"name": "GET Ligas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4OTYyMjMsImV4cCI6MTY2Mzk4MjYyMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.kZlAWLCsFzJkurWz1o5rMCHd6KD8D4L0U2tTQcHuCvc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.local.com/ligas",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"ligas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Liga",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4OTYyMjMsImV4cCI6MTY2Mzk4MjYyMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.kZlAWLCsFzJkurWz1o5rMCHd6KD8D4L0U2tTQcHuCvc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.local.com/ligas/8",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"ligas",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Liga",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4OTYyMjMsImV4cCI6MTY2Mzk4MjYyMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.kZlAWLCsFzJkurWz1o5rMCHd6KD8D4L0U2tTQcHuCvc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.local.com/ligas/11",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"ligas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registro de Ligas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4OTYyMjMsImV4cCI6MTY2Mzk4MjYyMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.kZlAWLCsFzJkurWz1o5rMCHd6KD8D4L0U2tTQcHuCvc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_type_league",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name_league",
+									"value": "Diversion2",
+									"type": "text"
+								},
+								{
+									"key": "amount_league",
+									"value": "1.50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.local.com/ligas",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"ligas"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edicion de Liga",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjE5MjYxMDQsImV4cCI6MTY2MjAxMjUwNCwiZGF0YSI6eyJlbWFpbCI6InBydWViYTFAY29ycmVvLmNvbSIsInBhc3N3b3JkIjoibzJhbzA3b2FmYXJ0d2V0c2RBRDUyMzU2RkVER2VnS3Q2TEMzSE03WHdyQ2g2OEh6Y2suUi5OelVtNGlxIn19.-LMrx7_pxnGDDf15tE2WHQrfsWibOLhrKn-SqXZeMDE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_type_league",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name_league",
+									"value": "Apuesta",
+									"type": "text"
+								},
+								{
+									"key": "amount_league",
+									"value": "10.50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.local.com/ligas/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"ligas",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipos",
+			"item": [
+				{
+					"name": "GET Equipos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4OTYyMjMsImV4cCI6MTY2Mzk4MjYyMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.kZlAWLCsFzJkurWz1o5rMCHd6KD8D4L0U2tTQcHuCvc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.local.com/equipos",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"equipos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Equipo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4OTYyMjMsImV4cCI6MTY2Mzk4MjYyMywiZGF0YSI6eyJlbWFpbCI6InBydWViYUBjb3JyZW8uY29tIiwicGFzc3dvcmQiOiJvMmFvMDdvYWZhcnR3ZXRzZEFENTIzNTZGRURHZVR4Vm9NMmtKdDZ4eUp3Y0JHNnFPQmJ0b1F6eEE2U0sifX0.kZlAWLCsFzJkurWz1o5rMCHd6KD8D4L0U2tTQcHuCvc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.local.com/equipos/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"local",
+								"com"
+							],
+							"path": [
+								"equipos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
